@@ -1,0 +1,371 @@
+@keyframes profile-higher {
+    0% {
+        height: 30%;
+    }
+
+    100% {
+        height: 60%;
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0);
+        transform-origin: top;
+        height: 0;
+        margin: 0;
+        padding: 0
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes reduce {
+    0% {
+        transform: scale(1);
+        transform-origin: bottom;
+    }
+
+    100% {
+        transform: scale(0);
+        height: 0;
+        margin: 0;
+        padding: 0
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--surface-color);
+}
+
+.personal-data {
+    display: flex;
+    position: relative;
+    width: calc(30% - 5px);
+    min-width: 200px;
+    height: 100%;
+    padding-right: 5px;
+    flex-direction: column;
+    color: var(--on-primary-color);
+    background-color: var(--primary-color);
+}
+
+.personal-data>.profile {
+    display: flex;
+    position: relative;
+    width: calc(100% - 10px);
+    height: 30%;
+    min-height: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.personal-data>.profile:hover {
+    animation-name: profile-higher;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.personal-data>.profile>.avatar {
+    flex-grow: 9;
+    height: 70%;
+}
+
+.personal-data>.profile>h1 {
+    flex-grow: 1;
+}
+
+.personal-data>.biography {
+    width: calc(100% - 40px);
+    flex-grow: 10;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.personal-data>.biography>ul .info {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.personal-data>.biography>ul .info>img {
+    margin-right: 10px;
+}
+
+.personal-data>.biography>.description {
+    margin-top: 10px;
+}
+
+.personal-data>.resizer#right {
+    position: absolute;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--primary-dark-color);
+}
+
+.information {
+    position: relative;
+    width: auto;
+    min-width: 200px;
+    height: 100%;
+    flex-grow: 10;
+    background-color: var(--secondary-color);
+    padding: 0 50px 0 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.information .collapsible{
+    position: relative;
+}
+
+.information .collapsible>input[type="checkbox"] {
+    display: none;
+}
+
+.information .collapsible>label {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    z-index: 10;
+}
+
+.information .collapsible>label:hover {
+    box-shadow: 0 0 1px var(--on-secondary-color);
+}
+
+.information .collapsible>input[type="checkbox"]:checked ~ label {
+    transform: rotate(180deg);
+}
+
+.information .collapsible>input[type="checkbox"]:checked ~ ul .content {
+    animation-name: grow;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.information .collapsible>.title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: calc(50px - 10px);
+    margin-top: 10px;
+    box-shadow: 0 0 1px var(--on-secondary-color);
+    padding: 5px;
+}
+
+.information .collapsible>.title>img {
+    margin-right: 10px;
+}
+
+.information .collapsible>.title>h2 {
+    padding-right: 50px;
+}
+
+.information .collapsible>ul .content {
+    width: calc(100% - 10px);
+    margin-top: 5px;
+    padding: 5px;
+    background-color: var(--secondary-light-color);
+    animation-name: reduce;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.information .collapsible>ul .content:hover {
+    box-shadow: 0 0 5px var(--secondary-dark-color);
+}
+
+.job>label.date {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 15px;
+}
+
+.job>label.date>p {
+    font-size: x-small;
+    margin-right: 5px;
+}
+
+.job>label.enterprise {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+
+.job>label.enterprise>h2 {
+    margin-left: 5px;
+}
+
+.job>.description {
+    position: relative;
+    margin-top: 5px;
+    padding: 20px 100px 20px 20px;
+}
+
+.school>label.date {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 15px;
+}
+
+.school>label.date>p {
+    font-size: x-small;
+    margin-right: 5px;
+}
+
+.school>label.institution {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+
+.school>label.institution>h2 {
+    margin-left: 5px;
+}
+
+.school>.description {
+    position: relative;
+    margin-top: 5px;
+    padding: 20px 100px 20px 20px;
+}
+
+.technology {
+    height: 30px;
+}
+
+.technology>label.code-language {
+    display: flex;
+    position: absolute;
+    left: 5px;
+    width: 40%;
+    height: calc(100% - 10px);
+    align-items: center;
+}
+
+.technology>label.code-language>h3 {
+    margin-left: 5px; 
+}
+
+.technology>.level {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    width: 200px;
+    height: calc(100% - 10px);
+}
+
+.language {
+    height: 30px;
+}
+
+.language>label.locale {
+    display: flex;
+    position: absolute;
+    left: 5px;
+    width: 40%;
+    height: calc(100% - 10px);
+    align-items: center;
+}
+
+.language>label.locale>h3 {
+    margin-left: 5px; 
+}
+
+.language>.level {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    width: 200px;
+    height: calc(100% - 10px);
+}
+
+.level>.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--error-color);
+}
+
+.level>.dot.active {
+    transform: scale(1.2);
+    background-color: var(--success-color);
+}
+
+.github {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+button.locale {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--on-secondary-color);
+    border: 0;
+    z-index: 100;
+}
+
+button.locale:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.5);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.8); 
+    border-radius: 10px;
+    opacity: 0.1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 128, 128, 1);
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Curriculum vitae</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./resources/cv.png" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/cv.css" />
+    <script src="./js/config.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/cv.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="personal-data">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="./resources/avatar.png" class="img-height-fill round">
+                </div>
+                <h1 id="fullname" class="text-cut select-none"></h1>
+                <p id="profession" class="text-cut select-none"></p>
+            </div>
+            <div class="biography">
+                <ul class="select-none">
+                    <li>
+                        <div class="info">
+                            <img src="./resources/china.png" class="img-height-fill">
+                            <p id="nationality" class="text-cut"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <img src="./resources/birthdate.png" class="img-height-fill">
+                            <p id="birthdate" class="text-cut"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <img src="./resources/phone.png" class="img-height-fill">
+                            <p id="phoneNumber" class="text-cut"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <img src="./resources/mail.png" class="img-height-fill">
+                            <p id="mail" class="text-cut"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <img src="./resources/location.png" class="img-height-fill">
+                            <p id="location" class="text-cut"></p>
+                        </div>
+                    </li>
+                </ul>
+                <p id="description" class="description select-none"></p>
+            </div>
+            <div class="resizer" id='right'></div>
+        </div>
+        <div class="information">
+            <ul class="select-none">
+                <li>
+                    <div class="collapsible">
+                        <input id="checkbox-experience" type="checkbox" name="collapse" checked>
+                        <label for="checkbox-experience" class="collapse">
+                            <img src="./resources/arrow-up.png" class="img-height-fill">
+                        </label>
+                        <div class="title">
+                            <img src="./resources/experience.png" class="img-height-fill">
+                            <h2 id="titleExperience" class="text-cut"></h2>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="content job">
+                                    <label class="date">
+                                        <p id="dateLaFabricaDeBots"></p>
+                                        <img src="./resources/date.png" class="img-height-fill">
+                                    </label>
+                                    <label class="enterprise">
+                                        <img src="./resources/work.png" class="img-height-fill">
+                                        <h2 id="titleLaFabricaDeBots"></h2>
+                                    </label>
+                                    <p id="descriptionLaFabricaDeBots" class="description"></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible">
+                        <input id="checkbox-education" type="checkbox" name="collapse" checked>
+                        <label for="checkbox-education" class="collapse">
+                            <img src="./resources/arrow-up.png" class="img-height-fill">
+                        </label>
+                        <div class="title">
+                            <img src="./resources/education.png" class="img-height-fill">
+                            <h2 id="titleEducation" class="text-cut"></h2>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="content school">
+                                    <label class="date">
+                                        <p id="dateComplutense"></p>
+                                        <img src="./resources/date.png" class="img-height-fill">
+                                    </label>
+                                    <label class="institution">
+                                        <img src="./resources/school.png" class="img-height-fill">
+                                        <h2 id="titleComplutense"></h2>
+                                    </label>
+                                    <p id="descriptionComplutense" class="description"></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content school">
+                                    <label class="date">
+                                        <p id="dateHuelin"></p>
+                                        <img src="./resources/date.png" class="img-height-fill">
+                                    </label>
+                                    <label class="institution">
+                                        <img src="./resources/school.png" class="img-height-fill">
+                                        <h2 id="titleHuelin"></h2>
+                                    </label>
+                                    <p id="descriptionHuelin" class="description"></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible">
+                        <input id="checkbox-skill" type="checkbox" name="collapse" checked>
+                        <label for="checkbox-skill" class="collapse">
+                            <img src="./resources/arrow-up.png" class="img-height-fill">
+                        </label>
+                        <div class="title">
+                            <img src="./resources/skill.png" class="img-height-fill">
+                            <h2 id="titleSkills" class="text-cut"></h2>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/c.png" class="img-height-fill">
+                                        <h3 id="c"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/cplusplus.png" class="img-height-fill">
+                                        <h3 id="cplusplus"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/csharp.png" class="img-height-fill">
+                                        <h3 id="csharp"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/java.png" class="img-height-fill">
+                                        <h3 id="java"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/python.png" class="img-height-fill">
+                                        <h3 id="python"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/html.png" class="img-height-fill">
+                                        <h3 id="html"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/css.png" class="img-height-fill">
+                                        <h3 id="css"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/javascript.png" class="img-height-fill">
+                                        <h3 id="javascript"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/sql.png" class="img-height-fill">
+                                        <h3 id="sql"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content technology">
+                                    <label class="code-language">
+                                        <img src="./resources/mongodb.png" class="img-height-fill">
+                                        <h3 id="mongodb"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible">
+                        <input id="checkbox-language" type="checkbox" name="collapse" checked>
+                        <label for="checkbox-language" class="collapse">
+                            <img src="./resources/arrow-up.png" class="img-height-fill">
+                        </label>
+                        <div class="title">
+                            <img src="./resources/language.png" class="img-height-fill">
+                            <h2 id="titleLanguage" class="text-cut"></h2>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="content language">
+                                    <label class="locale">
+                                        <img src="./resources/china.png" class="img-height-fill">
+                                        <h3 id="chinese"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content language">
+                                    <label class="locale">
+                                        <img src="./resources/spain.png" class="img-height-fill">
+                                        <h3 id="spanish"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content language">
+                                    <label class="locale">
+                                        <img src="./resources/united-kingdom.png" class="img-height-fill">
+                                        <h3 id="english"></h3>
+                                    </label>
+                                    <div class="level">
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot active"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a class="github" href="https://github.com/ZReKoJ" target="_blank">
+            <img src="./resources/github.png" class="img-height-fill round">
+        </a>
+        <button class="locale"><img src="./resources/spain.png" class="img-height-fill"></button>
+    </div>
+</body>

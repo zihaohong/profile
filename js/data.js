@@ -1,0 +1,128 @@
+var data = {
+    enUS: {
+        fullname: "Zihao Hong",
+        profession: "Student at Software Engineering",
+        nationality: "China",
+        birthdate: "1997-April-05",
+        phoneNumber: "688 168 288",
+        mail: "zhong@ucm.es",
+        location: "Avda Cardenal Herrera Oria, 293, 1º Dcha, 28035, Madrid, Spain",
+        description: "",
+
+        titleExperience: "Experience",
+        titleEducation: "Education",
+        titleSkills: "Skills and abilities",
+        titleLanguage: "Languages",
+
+        dateLaFabricaDeBots: "February 2018 - July 2018",
+        titleLaFabricaDeBots: "La Fábrica de Bots S.L.",
+        descriptionLaFabricaDeBots: "Completed an internship, in a startup. Assisted the daily operations and handled specific tasks assigned by supervisors in many departments.",
+
+        dateComplutense: "September 2015 - Now",
+        titleComplutense: "Complutense University",
+        descriptionComplutense: "Degree of Computer Science, currently studying the last year of the degree, with an average of 8.61/10.",
+
+        dateHuelin: "September 2009 - June 2015",
+        titleHuelin: "High School Huelin",
+        descriptionHuelin: "Bachelor degree in the field of Science and Technology. Graduated in 2015 with an average of 9.97/10.",
+    
+        c: "C",
+        cplusplus: "C++",
+        csharp: "C#",
+        java: "Java",
+        python: "Python",
+        html: "HTML",
+        css: "CSS",
+        javascript: "Javascript",
+        sql: "SQL",
+        mongodb: "MongoDB",
+
+        chinese: "Chinese",
+        spanish: "Spanish",
+        english: "English",
+    },
+    esES: {
+        fullname: "Zihao Hong",
+        profession: "Estudiante en Ingeniería de Software",
+        nationality: "China",
+        birthdate: "05-Abril-1997",
+        phoneNumber: "688 168 288",
+        mail: "zhong@ucm.es",
+        location: "Avda Cardenal Herrera Oria, 293, 1º Dcha, 28035, Madrid, Spain",
+        description: "",
+
+        titleExperience: "Experiencia",
+        titleEducation: "Educación",
+        titleSkills: "Competencias y habilidades",
+        titleLanguage: "Idiomas",
+
+        dateLaFabricaDeBots: "Febrero 2018 - Julio 2018",
+        titleLaFabricaDeBots: "La Fábrica de Bots S.L.",
+        descriptionLaFabricaDeBots: "Becario en una startup. Asistiendo a las operaciones diarias y realizando las tareas específicas asignadas por el supervisor teniendo lugar en varios departamentos.",
+
+        dateComplutense: "Septiembre 2015 - Ahora",
+        titleComplutense: "Universidad Complutense de Madrid",
+        descriptionComplutense: "Grado en Ingeniería de Software, ahora mismo el último año de la carrera, con una media de 8.61/10.",
+
+        dateHuelin: "Septiembre 2009 - Junio 2015",
+        titleHuelin: "I.E.S Huelin",
+        descriptionHuelin: "Bachillerato de ciencias y tecnologías. Graduado en 2015 con una media de 9.97/10.",
+    
+        c: "C",
+        cplusplus: "C++",
+        csharp: "C#",
+        java: "Java",
+        python: "Python",
+        html: "HTML",
+        css: "CSS",
+        javascript: "Javascript",
+        sql: "SQL",
+        mongodb: "MongoDB",
+
+        chinese: "Chino",
+        spanish: "Español",
+        english: "Inglés",
+    },
+    chCH: {
+        fullname: "洪子皓",
+        profession: "软件工程 学生",
+        nationality: "中国",
+        birthdate: "1997-04-05",
+        phoneNumber: "688 168 288",
+        mail: "zhong@ucm.es",
+        location: "Avda Cardenal Herrera Oria, 293, 1º Dcha, 28035, Madrid, Spain",
+        description: "",
+
+        titleExperience: "工作经验",
+        titleEducation: "教育",
+        titleSkills: "技能和能力",
+        titleLanguage: "语言",
+
+        dateLaFabricaDeBots: "02-2018 - 07-2018",
+        titleLaFabricaDeBots: "La Fábrica de Bots S.L.",
+        descriptionLaFabricaDeBots: "在一个初创企业当过实习生。 由于是一个初创企业， 接过许多不同部门的任务。",
+
+        dateComplutense: "09-2015 - 现在",
+        titleComplutense: "马德里康普顿斯大学",
+        descriptionComplutense: "软件工程专业, 现在就读最后一年, 现在成绩平均分是 8.61/10。",
+
+        dateHuelin: "09-2009 - 06-2015",
+        titleHuelin: "Huelin 中学",
+        descriptionHuelin: "毕业于2015，理科高中，平均分是 9.97/10。",
+    
+        c: "C",
+        cplusplus: "C++",
+        csharp: "C#",
+        java: "Java",
+        python: "Python",
+        html: "HTML",
+        css: "CSS",
+        javascript: "Javascript",
+        sql: "SQL",
+        mongodb: "MongoDB",
+
+        chinese: "中文",
+        spanish: "西班牙语",
+        english: "英语",
+    }
+}
